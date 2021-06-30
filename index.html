@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Tracker</title>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body class="loading">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="img/favicon.png" alt="" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#info">Informasi</a>
+            <a class="nav-link" href="#faq">F.A.Q</a>
+            <a class="nav-link " href="#statistics" tabindex="-1" aria-disabled="true">Statistik</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- First Content Page Appeare -->
+    <div class="first-content" id="home">
+        <div class="left-content">
+            <div class="image">
+                <img src="img/bg-jumbotron.png">
+            </div>
+        </div>
+
+        <div class="right-content">
+            <div class="head-word">
+                <p>Temukan info tentang <span>Covid-19</span></p>
+            </div>
+            <div class="word">
+                <p>Ragam informasi terupdate seputar covid-19 dengan data yang akurat</p>
+                <p>dan sumber yang terpercaya untuk menambah wawasan anda</p>
+            </div>
+            <div class="button">
+                <a href="#info">Mulai Menggali Informasi <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Start Main Content -->
+    <div class="main" id="info">
+        <div class="left-content">
+            <div class="text">
+                <h1>Covid-19</h1>
+                <p>Novel Coronavirus atau dikenal dengan Covid-19,salah satu dari jenis coronavirus yang mengakibatkan infeksi saluran pernapasan. Menjadi penyebab wabah di Wuhan,China pada Desember 2019 dan akhirnya menyebar ke seluruh negara di dunia. </p>
+            </div>
+
+            <div class="scroll">
+                <div class="text">
+                    <h1>Scroll More</h1>
+                </div>
+                <div class="indicator">
+                    <svg class="arrows" preserveAspectRatio="xMaxYMax meet">
+                        <path class="a1" d="M0 0 L20 32 L40 0"></path>
+                        <path class="a2" d="M0 20 L20 52 L40 20"></path>
+                        <path class="a3" d="M0 40 L20 72 L40 40"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-content">
+            <div class="image">
+                <img src="img/covid.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Second Content -->
+    <div class="second-content">
+
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-sebab-tab" data-bs-toggle="tab" data-bs-target="#nav-sebab" type="button" role="tab" aria-controls="nav-sebab" aria-selected="true">Penyebab</button>
+            <button class="nav-link" id="nav-gejala-tab" data-bs-toggle="tab" data-bs-target="#nav-gejala" type="button" role="tab" aria-controls="nav-gejala" aria-selected="false">Gejala</button>
+            <button class="nav-link" id="nav-rawat-tab" data-bs-toggle="tab" data-bs-target="#nav-rawat" type="button" role="tab" aria-controls="nav-rawat" aria-selected="false">Perawatan</button>
+            <button class="nav-link" id="nav-cegah-tab" data-bs-toggle="tab" data-bs-target="#nav-cegah" type="button" role="tab" aria-controls="nav-cegah" aria-selected="false">Pencegahan</button>
+          </div>
+
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-sebab" role="tabpanel" aria-labelledby="nav-sebab-tab">
+              <p>Covid-19 bersifat <span>Zoonotic</span> yang berarti mereka berkembang pada hewan sebelum menular pada manusia. Setelah virus berkembang pada manusia, virus corona dapat ditularkan dari orang ke orang melalui percikan air liur atau disebut <span>Droplets</span>.</p>
+
+              <p>Virus covid-19 sendiri belum di konfirmasi soal hubunganya dengan satu binatang,namun peneliti percaya bahwa virus itu mungkin telah ditularkan dari kelelawar ke hewan lain,kemudian ditularkan ke manusia.</p>
+
+              <p>Penularan ini kemungkinan terjadi di pasar makanan Wuhan,China.</p>
+
+              <p>Infeksi coronavirus disebabkan oleh virus corona itu sendiri yang umumnya menyebar dengan cara:</p>
+              
+              <div class="last-text">
+                  <ul>
+                      <li>Percikan air liur dari orang yang terinfeksi (batuk dan bersin).</li>
+                      <li>Menyentuh tangan atau wajah orang yang terinfeksi.</li>
+                      <li>Menyentuh hidung atau mulut setelah memegang barang yang terkena percikan air liur pengidap virus covid-19. </li>
+                  </ul>
+
+                  <div class="image-text">
+                      <img src="img/bat.png">
+                  </div>
+              </div>
+          </div>
+
+            <div class="tab-pane fade" id="nav-gejala" role="tabpanel" aria-labelledby="nav-gejala-tab">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <p>Gejala yang umum terjadi <i class='bx bx-error bx-flashing' style='color:#2bfc00'></i></p>
+                      <div class="images">
+                        <div class="image">
+                            <img src="img/fever.png">
+                            <p>Demam</p>
+                        </div>
+                        <div class="image">
+                            <img src="img/fatigue.png">
+                            <p>Merasa Kelelahan</p>
+                        </div>  
+                        <div class="image">
+                            <img src="img/cough.png">
+                            <p>Batuk Kering</p>
+                        </div>  
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <p>Gejala yang tidak umum terjadi <i class='bx bx-error bx-flashing' style='color:#f1ec2f'  ></i></p>
+                      <div class="images">
+                        <div class="image">
+                            <img src="img/sore-throat.png">
+                            <p>Sakit Tenggorokan</p>
+                        </div>
+                        <div class="image">
+                            <img src="img/red-eyes.png">
+                            <p>Mata Merah</p>
+                        </div>  
+                        <div class="image">
+                            <img src="img/headache.png">
+                            <p>Sakit Kepala</p>
+                        </div>
+                        <div class="image">
+                            <img src="img/smell.png">
+                            <p>Kehilangan Indra Penciuman</p>
+                        </div>  
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <p>Gejala serius terjadi <i class='bx bx-error bx-flashing' style='color:#ff0000' ></i></p>    
+                      <div class="images">
+                        <div class="image">
+                            <img src="img/breath.png">
+                            <p>Kesulitan Bernapas</p>
+                        </div>
+                        <div class="image">
+                            <img src="img/chest.png">
+                            <p>Dada Terasa Tertekan</p>
+                        </div>  
+                        <div class="image">
+                            <img src="img/talk.png">
+                            <p>Sulit Berbicara</p>
+                        </div>  
+                      </div>    
+                    </div>
+                  </div>
+                  <div class="button">
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+                </div>
+                <div class="text">
+                    <p>Segera mencari bantuan medis jika muncul gejala serius <i class='bx bx-error bx-flashing' style='color:#ff0000' ></i></p>
+                    <p>Gejala akan muncul 14 hari setelah terinfeksi virus,namun rata-rata muncul 5-6 hari.</p>
+                </div>
+            </div>
+          
+              
+              
+          
+            <div class="tab-pane fade" id="nav-rawat" role="tabpanel" aria-labelledby="nav-rawat-tab">
+              <div class="text">
+                  <p>Pada prakteknya,coronaivirus dapat sembuh dengan sendirinya tanpa perawatan khusus.</p>
+                  <p>Lakukan hal ini setelah muncul gejala dari coronavirus:</p>
+              </div>
+               <div class="images">
+                    <div class="image">
+                        <img src="img/pills.png">
+                        <p>Konsumsi Obat Untuk Mengurangi Sakit Dari Gejala</p>
+                    </div>
+                    <div class="image">
+                        <img src="img/chest.png">
+                        <p>Istirahat Yang Cukup</p>
+                    </div>  
+                    <div class="image">
+                        <img src="img/talk.png">
+                        <p>Penuhi Asupan Cairan</p>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>Jika tidak ada perubahan pada gejala dan malah makin memburuk,segera pergi menemui dokter.<i class='bx bx-error bx-flashing' style='color:#ff0000' ></i></p>
+                    <p>Jika gejala yang muncul adalah gejala serius,segera pergi menemui dokter.<i class='bx bx-error bx-flashing' style='color:#ff0000' ></i></p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-cegah" role="tabpanel" aria-labelledby="nav-cegah-tab">
+                <div class="text">
+                    <p>Penyebaran coronavirus dapat kita cegah dengan mempraktekan hal berikut:</p>
+                </div>
+                <div class="images">
+                    <div class="image">
+                        <img src="img/wash.png">
+                        <p>Mencuci tangan setelah menyentuh sesuatu</p>
+                    </div>
+                    <div class="image">
+                        <img src="img/chest.png">
+                        <p>Jangan Menyentuh Mulut,Hidung,Atau Mata,Sebelum Mencuci Tangan</p>
+                    </div>  
+                    <div class="image">
+                        <img src="img/cough2.png">
+                        <p>Tutup Mulut Ketika Bersin Atau Batuk</p>
+                    </div>
+                    <div class="image">
+                        <img src="img/distance.png">
+                        <p>Jaga Jarak Dengan Orang Lain</p>
+                    </div>
+                    <div class="image">
+                        <img src="img/home.png">
+                        <p>Diam Dirumah Jika Tidak Ada Keperluan</p>
+                    </div>
+                    <div class="image">
+                        <img src="img/hand.png">
+                        <p>Hindari Berjabat Tangan</p>
+                    </div>
+                </div>
+                <div class="bottom-text">
+                    <img src="img/medical-team.png">
+                    <p>Patuhi segala protokol kesehatan,demi mengurangi angka penyebaran covid-19</p>
+                </div>
+            </div>
+    </div>
+
+
+    <!-- F.A.Q Content -->
+    <div class="faq-content" id="faq">
+        <p>Pertanyaan Seputar Covid-19</p>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Apakah Covid-19 berbahaya?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Covid-19 dapat menyebabkan gejala ringan seperti flu,demam,sakit tenggorokan, dan batuk. Sekitar 80% kasus dapat sembuh tanpa penanganan khusus,gejala serius mungkin timbul pada sebagian orang dan dapat berbahaya. Meskipun begitu tingkat kematian Covid-19 cukup rendah,lain lagi keadaan nya untuk mereka yang berusia lanjut dan orang yang punya penyakit medis sebelumnya.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Jika saya terkena Covid-19,apakah bisa sembuh sendiri?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Menurut WHO,80% orang yang terkena virus covid,dapat sembuh sendiri,namun baiknya jika mulai muncul gejala Covid-19,segera pergi menemui dokter untuk diberikan penanganan medis</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Kenapa saya perlu isolasi 14 hari setelah tersuspek tertular Covid-19
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Covid-19 menunjukan gejala 1-14 hari,oleh karena itu orang yang dicurigai terpapar virus Covid-19 harus di isolasi selama 14 hari dan dipantau gejala yang muncul. Untuk memastikan,suspek bisa mengikuti tes beberapa kali.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                Apakah Covid-19 dapat menyebar dari hewan peliharan?
+              </button>
+            </h2>
+            <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Beberapa anjing dan kucing yang memiliki kontak dengan orang yang terinfeksi,dinyatakan positif Covid-19,tetapi masih belum ada bukti hewan hewan ini dapat menyebarkan virus Covid-19 ke manusia.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                Apakah Covid-19 dapat menyebar dari orang yang tidak memiliki gejala?
+              </button>
+            </h2>
+            <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Covid-19 menyebar lewat percikan air liur (droplets),banyak orang yang terkena virus covid-19 hanya mengalami gejala ringan pada tahap awal,oleh karena itu Covid-19 dapat menular dari orang yang hanya bergejala ringan seperti batuk ringan.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                Apakah vaksin adalah obat?
+              </button>
+            </h2>
+            <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Vaksin bukanlah obat. Vaksin mendorong pembentukan kekebalan pada penyakit COVID-19 agar terhindar dari tertular ataupun kemungkinan sakit berat.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                Kapan vaksin siap di distribusikan?
+              </button>
+            </h2>
+            <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Pelaksanaan vaksinasi bertahap COVID-19 akan dilakukan setelah mendapat persetujuan dari Badan POM, berdasarkan hasil uji klinik di luar negeri atau Indonesia.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading8">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+                Apakah vaksin ampuh melindungi?
+              </button>
+            </h2>
+            <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-heading8" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Dampak vaksin COVID-19 terhadap pandemi akan bergantung pada beberapa faktor. Ini termasuk faktor-faktor seperti efektivitas vaksin; seberapa cepat mereka disetujui, diproduksi, dan dikirim; dan berapa banyak target jumlah orang yang akan divaksinasi.
+
+              Pemerintah menargetkan setidaknya 60% penduduk Indonesia secara bertahap akan mendapatkan vaksin COVID-19 agar mencapai kekebalan kelompok (herd immunity). Source <a href="covid19.go.id"></a>covid19.go.id</div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    <!-- Statistik -->
+    <div class="container-fluid" id="statistics">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 worldwide">
+                <h1 class="text-center my-4">World Covid Statistics</h1>
+                <div class="image text-center">
+                    <img src="img/worldwide.png" alt="Virus"> <br>
+                </div>
+                <!-- <div class="container-fluid d-flex flex-wrap text-center justify-content-center my-4"> -->
+                    <div class="world__status d-flex flex-wrap text-center my-4 justify-content-evenly row">
+                        <div class="status__item">
+                            <h2>0</h2>
+                            <p class="confirmed">Confirmed</p>
+                        </div>
+                        <div class="status__item">
+                            <h2>0</h2>
+                            <p class="deaths">Deaths</p>
+                        </div>
+                        <div class="status__item">
+                            <h2>0</h2>
+                            <p class="recovered">Recovered</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 chart-container-total-world pb-3">
+                            <canvas id="worldwideChart"></canvas>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 indonesia">
+                <h1 class="text-center my-4">Indonesia Covid Statistics</h1>
+                <div class="image text-center">
+                    <img src="img/indonesia.png" alt="Virus">
+                </div>
+                <!-- <div class="container-fluid d-flex flex-wrap text-center justify-content-center my-4"> -->
+                    <div class="indo__status d-flex flex-wrap text-center my-4 justify-content-evenly row">
+                        <div class="status__item">
+                            <h2>0</h2>
+                            <p class="confirmed">Confirmed</p>
+                        </div>
+                        <div class="status__item">
+                            <h2>0</h2>
+                            <p class="deaths">Deaths</p>
+                        </div>
+                        <div class="status__item">
+                            <h2>0</h2>
+                            <p class="recovered">Recovered</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 chart-container-total-world pb-3">
+                            <canvas id="indoChart"></canvas>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <section class="search">
+            <div class="row py-4">
+                <div class="search__wrapper col-12 text-center">
+                    <form id="covidSearch">
+                        <i class="fw-bolder text-center fs-6 font-monospace">API by <a target="_blank" class="link-dark" href="https://corona.lmao.ninja/v2/countries/">disease.sh</a></i>
+                        <h4>Search by Country</h4>
+                        <input autocomplete="off" type="text" name="search" id="search" placeholder="Country Name" class="fs-6">
+                        <button type="submit" class="fw-bold">Search</button> <br>
+                        <!-- LOADING ANIMATION WILL BE HERE -->
+                    </form>
+                    <ul id="match-list" class="list-group"></ul>
+                    <!-- LIVE SEARCH SUGGESTION -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="search__wrapper col-12">
+                    <div class="search__result text-center" id="countryResultSearch">
+                        <!-- CASE PER COUNTRY WILL BE HERE -->
+                        
+                    </div>
+                </div>
+            </div>
+            <aside class="container-fluid case-provinsi">
+                <div class="row pt-4">
+                    <div class="search__wrapper col-12 text-center">
+                            <!-- <form id="covidProvinsi"> -->
+                                <h4>Cari Berdasarkan Nama Provinsi</h4>
+                                <input type="text" id="searchProvinsi" placeholder="Nama Provinsi" class=" fs-6">
+                            <!-- </form> -->
+                    </div>
+                    <i class="fw-bolder text-center fs-6 mt-3 font-monospace">API by <a target="_blank" class="link-dark" href="https://bnpb-inacovid19.hub.arcgis.com/datasets/data-harian-kasus-per-provinsi-covid-19-indonesia/api">BNPB</a></i>
+                </div>
+                <div class="row d-flex flex-wrap justify-content-center case_result_provinsi pb-4 px-3" id="card-provinsi-container">
+                </div>
+            </aside>
+        </section>
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2021 <a href="https://nevtik.org/">Nevtik.org</a></p>
+    </div>
+
+    <div class="loader">
+        <i class="bx bxs-virus bx-spin"></i>
+    </div>
+
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/countUp.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/provinsi.js"></script>
+    <script src="js/liveSearchProvinsi.js"></script>
+    <script src="js/liveSearchGlobal.js"></script>
+    <script src="js/chartjs/chart.min.js"></script>
+    <script src="js/chartjs/globalChart.js"></script>
+    <script src="js/chartjs/indoChart.js"></script>
+    
+
+</body>
+</html>
