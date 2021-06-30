@@ -790,6 +790,11 @@ section aside.case-provinsi {
     background-color: #F3F0D7;
 }
 
+.case_result_provinsi {
+    overflow-y: scroll;
+    height: 440px;
+}
+
 /* loader */
 .loader {
     position: fixed;
