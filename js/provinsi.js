@@ -50,4 +50,3 @@ function showCaseProvinsi() {
 document.addEventListener("DOMContentLoaded", function() {
     showCaseProvinsi();
 })
-
