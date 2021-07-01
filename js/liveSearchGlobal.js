@@ -16,12 +16,5 @@ $(document).ready(function() {
         } else {
             $('#match-list').removeClass('toggleHidden');
         }
-    });
-
-    $("#search").on('focus', function() {
-        $('#match-list').removeClass('toggleHidden');
-    });
-
-
-    
+    });    
 } )
