@@ -795,6 +795,12 @@ section aside.case-provinsi {
     height: 440px;
 }
 
+/* MAP COVID */
+#mapid {
+    height: 500px;
+    overflow-y: scroll;
+}
+
 /* loader */
 .loader {
     position: fixed;

@@ -1,1 +1,1 @@
-PASTIKAN MEMBUKA WEB DALAM KEADAAN ONLINE UNTUK MEMPEROLEH DATA DARI WEB API
+Pastikan membuka web dalam keadaan online untuk mendapatkan data dari Web API

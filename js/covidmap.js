@@ -1,5 +1,5 @@
-var mymap = L.map('covidMapping').setView([51.505, -0.09], 2.5);
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+var mymap = L.map('mapid').setView([-6.200000, 106.816666], 3.5);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWttYWxhZGlzYSIsImEiOiJja3FwenR5d3kxMWN5MnRtaGlkcWs1dWJyIn0.Ip1uKyIJTs6uvtLEAP2gcQ', {
                     maxZoom: 18,
                     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
                         'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -40,14 +40,13 @@ function updateMapWorld()
                 L.marker([latitude, longitude], {icon: iconVirus}).addTo(mymap)
                 .bindPopup(
                     `<img src='${element.countryInfo.flag}'> <br/>
-                    <h1>${element.country}</h1>
-                    <h3>Cases: <b>${element.cases}</b></h3>
-                    <h3>Deaths: <b>${element.deaths}</b></h3>
-                    <h3>Recovered: <b>${element.recovered}</b></h3>
+                    <h3>${element.country}</h3>
+                    <h6>Cases: <b>${element.cases}</b></h6>
+                    <h6>Deaths: <b>${element.deaths}</b></h6>
+                    <h6>Recovered: <b>${element.recovered}</b></h6>
                     `
                     
                     )
-                .openPopup();
     
             } )
     
