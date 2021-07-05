@@ -35,15 +35,23 @@ function updateMapWorld()
                     fillColor: `rgb(${element.cases * 0.025}, 0, 0)`,
                     fillOpacity: 0.5,
                     radius: 300000
-                }).addTo(mymap);
+                }).addTo(mymap).bindPopup(
+                    `<img src='${element.countryInfo.flag}'> <br/>
+                    <h3>${element.country}</h3>
+                    <h6 class='text-danger'>Cases: <b>${formatNumber(element.cases)}</b></h6>
+                    <h6 class='text-body'>Deaths: <b>${formatNumber(element.deaths)}</b></h6>
+                    <h6 class='text-success'>Recovered: <b>${formatNumber(element.recovered)}</b></h6>
+                    `
+                    
+                    );
     
                 L.marker([latitude, longitude], {icon: iconVirus}).addTo(mymap)
                 .bindPopup(
                     `<img src='${element.countryInfo.flag}'> <br/>
                     <h3>${element.country}</h3>
-                    <h6>Cases: <b>${element.cases}</b></h6>
-                    <h6>Deaths: <b>${element.deaths}</b></h6>
-                    <h6>Recovered: <b>${element.recovered}</b></h6>
+                    <h6 class='text-danger'>Cases: <b>${formatNumber(element.cases)}</b></h6>
+                    <h6 class='text-body'>Deaths: <b>${formatNumber(element.deaths)}</b></h6>
+                    <h6 class='text-success'>Recovered: <b>${formatNumber(element.recovered)}</b></h6>
                     `
                     
                     )
