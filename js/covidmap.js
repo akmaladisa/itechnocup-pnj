@@ -37,7 +37,7 @@ function updateMapWorld()
                     radius: 300000
                 }).addTo(mymap).bindPopup(
                     `<img src='${element.countryInfo.flag}'> <br/>
-                    <h3>${element.country}</h3>
+                    <h3 class="mt-2">${element.country}</h3>
                     <h6 class='text-danger'>Cases: <b>${formatNumber(element.cases)}</b></h6>
                     <h6 class='text-body'>Deaths: <b>${formatNumber(element.deaths)}</b></h6>
                     <h6 class='text-success'>Recovered: <b>${formatNumber(element.recovered)}</b></h6>
@@ -48,7 +48,7 @@ function updateMapWorld()
                 L.marker([latitude, longitude], {icon: iconVirus}).addTo(mymap)
                 .bindPopup(
                     `<img src='${element.countryInfo.flag}'> <br/>
-                    <h3>${element.country}</h3>
+                    <h3 class="mt-2">${element.country}</h3>
                     <h6 class='text-danger'>Cases: <b>${formatNumber(element.cases)}</b></h6>
                     <h6 class='text-body'>Deaths: <b>${formatNumber(element.deaths)}</b></h6>
                     <h6 class='text-success'>Recovered: <b>${formatNumber(element.recovered)}</b></h6>
@@ -62,3 +62,4 @@ function updateMapWorld()
 }
 
 updateMapWorld();
+
