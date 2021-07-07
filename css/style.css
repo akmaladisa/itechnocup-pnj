@@ -763,6 +763,11 @@ section aside.case-provinsi {
     background-color: #F3F0D7;
 }
 
+/* POP UP MAP */
+.popUp {
+    width: auto;
+}
+
 .row {
     background-color: #F3F0D7;
 }
@@ -902,7 +907,9 @@ input#searchProvinsi:focus {
         /* SEJAJARIN INPUT DAN SUGESTION */
     }
 
-    
+    #mapid {
+        height: 100vw;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -915,6 +922,10 @@ input#searchProvinsi:focus {
         margin: auto;
         cursor: pointer;
         /* SEJAJARIN INPUT DAN SUGESTION */
+    }
+
+    #mapid {
+        height: 90vw;
     }
 
 }

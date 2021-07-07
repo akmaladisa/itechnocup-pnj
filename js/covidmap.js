@@ -36,24 +36,28 @@ function updateMapWorld()
                     fillOpacity: 0.5,
                     radius: 300000
                 }).addTo(mymap).bindPopup(
-                    `<img src='${element.countryInfo.flag}'> <br/>
-                    <h3 class="mt-2">${element.country}</h3>
-                    <h6 class='text-danger'>Cases: <b>${formatNumber(element.cases)}</b></h6>
-                    <h6 class='text-body'>Deaths: <b>${formatNumber(element.deaths)}</b></h6>
-                    <h6 class='text-success'>Recovered: <b>${formatNumber(element.recovered)}</b></h6>
                     `
-                    
+                    <div class='popUp'>
+                        <img src='${element.countryInfo.flag}' class='img-fluid'> <br/>
+                        <h3 class="mt-2">${element.country}</h3>
+                        <h6 class='text-danger'>Cases: <b>${formatNumber(element.cases)}</b></h6>
+                        <h6 class='text-body'>Deaths: <b>${formatNumber(element.deaths)}</b></h6>
+                        <h6 class='text-success'>Recovered: <b>${formatNumber(element.recovered)}</b></h6>
+                    </div>
+                    `
                     );
     
                 L.marker([latitude, longitude], {icon: iconVirus}).addTo(mymap)
                 .bindPopup(
-                    `<img src='${element.countryInfo.flag}'> <br/>
-                    <h3 class="mt-2">${element.country}</h3>
-                    <h6 class='text-danger'>Cases: <b>${formatNumber(element.cases)}</b></h6>
-                    <h6 class='text-body'>Deaths: <b>${formatNumber(element.deaths)}</b></h6>
-                    <h6 class='text-success'>Recovered: <b>${formatNumber(element.recovered)}</b></h6>
                     `
-                    
+                    <div class='popUp'>
+                        <img src='${element.countryInfo.flag}' class='img-fluid'> <br/>
+                        <h3 class="mt-2">${element.country}</h3>
+                        <h6 class='text-danger'>Cases: <b>${formatNumber(element.cases)}</b></h6>
+                        <h6 class='text-body'>Deaths: <b>${formatNumber(element.deaths)}</b></h6>
+                        <h6 class='text-success'>Recovered: <b>${formatNumber(element.recovered)}</b></h6>
+                    </div>
+                    `
                     )
     
             } )
