@@ -22,7 +22,7 @@
 </head>
 <body class="loading">
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
         <a class="navbar-brand" href="#">
           <img src="img/favicon.png" alt="" width="50" height="50">
         </a>
@@ -42,13 +42,7 @@
 
     <!-- First Content Page Appeare -->
     <div class="first-content" id="home">
-        <div class="left-content">
-            <div class="image">
-                <img src="img/bg-jumbotron.png">
-            </div>
-        </div>
-
-        <div class="right-content">
+        <div class="content">
             <div class="head-word">
                 <p>Temukan info tentang <span>Covid-19</span></p>
             </div>
@@ -56,8 +50,8 @@
                 <p>Ragam informasi terupdate seputar covid-19 dengan data yang akurat</p>
                 <p>dan sumber yang terpercaya untuk menambah wawasan anda</p>
             </div>
-            <div class="button">
-                <a href="#info">Mulai Menggali Informasi <i class="bx bx-right-arrow-alt"></i></a>
+            <div class="arrow">
+                <i class='bx bxs-down-arrow bx-fade-down' style='color:#b1afaa'  ></i>
             </div>
         </div>
     </div>
@@ -483,5 +477,15 @@
     <script src="js/chartjs/globalChart.js"></script>
     <script src="js/chartjs/indoChart.js"></script>
     <script src="js/covidmap.js"></script>
+    <script type="text/javascript">
+     $(window).scroll(function(){
+       $('nav').toggleClass('nav-scroll', $(this).scrollTop() > 10);
+       });
+
+     $(window).scroll(function(){
+       $('ul').toggleClass('nav-scroll', $(this).scrollTop() > 10);
+       });
+
+    </script>
 </body>
 </html>
