@@ -14,7 +14,6 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
-
 /* Navbar */
 nav.navbar .navbar-brand{
     padding: 5px 0 5px 40px;
@@ -24,13 +23,27 @@ nav .navbar-nav a{
     margin: 0 10px;
     width: 80px;
     text-align: center;
-    color: #5e454b !important;
+    color: #fff !important;
     border-radius: 5px;
+    font-size: 18px;
 }
 
 nav .navbar-nav a:hover{
     background-color: #5e454b;
     color: #d8b384 !important;
+}
+
+.bg-transparant {
+    background: rgba(0,0,0,.3) !important;
+    transition :.7s ease;
+    color: white !important;
+}
+.bg-transparant.nav-scroll{
+    background-color: #fff !important;
+}
+
+.bg-transparant.nav-scroll a{
+    color: #5E454B !important;
 }
 
 /* Responsive Navbar*/
@@ -51,80 +64,53 @@ nav .navbar-nav a:hover{
     padding-top: 80px;
     padding-bottom: 50px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
     flex-wrap: wrap;
     background-color: #f3f0d7;
+    background-image: linear-gradient(180deg, rgba(69,43,23,0) 0%, rgba(69,43,23,0.6558823358444941) 66%, rgba(69,43,23,1) 100%), url(../img/second-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(50%) drop-shadow(8px 8px 10px gray);
+
 }
 
-.first-content .left-content{
-    width: 50%;
-}
-
-.first-content .left-content .image{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.first-content .left-content .image img{
+.first-content .content{
     width: 100%;
+    height: 50%;
+    filter: none !important;
 }
 
-.first-content .right-content{
-    width: 50%;
-}
 
-.first-content .right-content .head-word{
-    padding: 50px 100px 0 0;
-}
-
-.first-content .right-content .head-word p{
-    text-align: right;
-    font-size: 32px;
-    color: #5e454b;
+.first-content .content .head-word p{
+    text-align: center;
+    font-size: 40px;
+    color: #F3F0D7;
     animation: fade 2s;
 }
 
-.first-content .right-content .head-word span{
+.first-content .content .head-word span{
     font-weight: bold;  
 }
 
-.first-content .right-content .word{
-    padding-right: 80px;
-}
-
-.first-content .right-content .word p{
-    text-align: right;
-    margin-top: -10px;
-    color: #5e454b;
-    font-size: 20px;
+.first-content .content .word p{
+    text-align: center;
+    color: #F3F0D7;
+    font-size: 24px;
     animation: fade 2s;
 }
 
-.first-content .right-content .button{
-    padding-right: 100px;
-    text-align: right;
-    margin-top: -5px;
+.first-content .content .arrow{
+    text-align: center;
+    margin-top: 30px;
 }
 
-.first-content .right-content .button a{
-    text-decoration: none;
-    background-color: #5E454B;
-    padding: 8px 15px;
-    border-radius: 5px;
-    color: #D8B384;
-    font-size: 18px;
-    animation: slide 2s;
+.first-content .content .arrow i{
+    font-size: 30px;
 }
-
-.first-content .right-content .button i{
-    font-size: 18px;
-} 
-
-
-.first-content .right-content .button a:hover{
-    text-shadow: 0 0 1px #D8B384;
-}  
 
 @keyframes fade{
     0%{
@@ -136,76 +122,51 @@ nav .navbar-nav a:hover{
     }
 }
 
-@keyframes slide{
-    0%{
-        margin-right: -100px;
-        opacity: .1;
-    }
-
-    100%{
-        margin-left: -100px;
-        opacity: 1;
-    }
-}
-
 /*Responsive Jumbotron*/
 
-/* 320px Max screen */
-@media screen and (min-width:300px){
-    .first-content .right-content .word p{
-        padding: 0 20px;
+/* 300-570 Width */
+@media screen and (min-width:300px) and (max-width:570px){
+    .first-content{
+        align-items: center;
+        background-size: 100% 100%;
+    }
+
+    .first-content .content{
+        margin-top: 100px;
+    }
+
+    .first-content .content .head-word p{
+        font-size: 24px;
+    }
+
+    .first-content .content .word{
+        padding: 0 10px;
+    }
+
+    .first-content .content .word p{
+        font-size: 14px;
+    }
+
+    .first-content .content .arrow i{
+        font-size: 25px;
     }
 }
 
-/* 570px Max screen */
-@media screen and (max-width:800px){
-    .firts-content{
-        flex-wrap: wrap;
+/* 571-800 Width */
+
+@media screen and (min-width:571px) and (max-width:800px){
+
+    .first-content .content .head-word p{
+        font-size: 28px;
     }
 
-   .first-content .left-content{
-        width: 100%;
-   }
-
-   .first-content .right-content{
-        width: 100%;
-   }
-
-   .first-content .right-content .head-word{
-        padding: 0 0 0 0;
+    .first-content .content .word p{
+        font-size: 18px;
     }
 
-    .first-content .right-content .head-word p{
-        text-align: center;
+    .first-content .content .arrow i{
+        font-size: 28px;
     }
-
-    .first-content .right-content .word, .right-content .button{
-        padding-right: 0;
-    }
-
-    .first-content .right-content .word p,.right-content .button{
-        text-align: center;
-    }
-
-    .first-content .right-content .button{
-        margin-top: 20px;
-        padding-bottom: 10px;
-        text-align: center;
-        padding-right: 0;
-    }
-
-    @keyframes slide{
-        0%{
-            margin-right: -40px;
-            opacity: .1;
-        }
-
-        100%{
-            margin-left: 0px;
-            opacity: 1;
-        }
-    }
-
 }
 
 
