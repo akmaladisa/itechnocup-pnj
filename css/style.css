@@ -1,11 +1,11 @@
 /*Global*/
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 
 *{
     margin: 0;
     padding: 0;
-    font-family: "Oswald" , sans-serif;
+    font-family: "Poppins" , sans-serif;
     scroll-behavior: smooth;
     
 }
@@ -14,6 +14,7 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
 /* Navbar */
 nav.navbar .navbar-brand{
     padding: 5px 0 5px 40px;
@@ -21,16 +22,17 @@ nav.navbar .navbar-brand{
 
 nav .navbar-nav a{
     margin: 0 10px;
-    width: 80px;
+    width: 110px;
     text-align: center;
-    color: #fff !important;
+    color: #fff;
     border-radius: 5px;
     font-size: 18px;
+    font-weight: 500;
 }
 
 nav .navbar-nav a:hover{
-    background-color: #5e454b;
-    color: #d8b384 !important;
+    background-color: #fff;
+    color: #5e454b;
 }
 
 .bg-transparant {
@@ -38,13 +40,21 @@ nav .navbar-nav a:hover{
     transition :.7s ease;
     color: white !important;
 }
+
 .bg-transparant.nav-scroll{
     background-color: #fff !important;
 }
 
-.bg-transparant.nav-scroll a{
-    color: #5E454B !important;
+.bg-transparant.nav-scroll .navbar-nav a{
+    color: #5E454B;
 }
+
+.bg-transparant.nav-scroll .navbar-nav a:hover{
+    background-color: #5e454b;
+    color: #d8b384;
+}
+
+
 
 /* Responsive Navbar*/
 @media screen and (min-width:300px) and (max-width: 1000px){
@@ -70,7 +80,7 @@ nav .navbar-nav a:hover{
     align-items: flex-end;
     flex-wrap: wrap;
     background-color: #f3f0d7;
-    background-image: linear-gradient(180deg, rgba(69,43,23,0) 0%, rgba(69,43,23,0.6558823358444941) 66%, rgba(69,43,23,1) 100%), url(../img/second-banner.jpg);
+    background-image: linear-gradient(180deg, rgba(69,43,23,0) 0%, rgba(69,43,23,0.6558823358444941) 66%, rgba(69,43,23,1) 100%), url(../img/second-banner.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,10 +100,11 @@ nav .navbar-nav a:hover{
     font-size: 40px;
     color: #F3F0D7;
     animation: fade 2s;
+    font-weight: 500;
 }
 
 .first-content .content .head-word span{
-    font-weight: bold;  
+    font-weight: 700;  
 }
 
 .first-content .content .word p{
@@ -110,6 +121,7 @@ nav .navbar-nav a:hover{
 
 .first-content .content .arrow i{
     font-size: 30px;
+    font-display: block;
 }
 
 @keyframes fade{
@@ -175,81 +187,75 @@ nav .navbar-nav a:hover{
 .main{
     width: 100%;
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #f3f0d7;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
 }
 
-.main .right-content{
+.main .left-content{
     text-align: center;
     width: 50%;
     height: 100%;
 
 }
 
-.main .right-content img{
-    width: 70%;
-    height: 500px;
+.main .left-content .image{
+    margin: 0 auto;
+    width: 80%;
+    background: rgb(115,114,113);
+    background: linear-gradient(180deg, rgba(115,114,113,0) 0%, rgba(73,64,58,0.6558823358444941) 76%, rgba(59,48,40,1) 100%);   
 }
 
-.main .left-content{
-    width: 40%; 
+.main .left-content img{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 80%;
+    filter: brightness(80%);
 }
 
-.main .left-content{
+.main .right-content{
+    width: 40%;
+}
+
+.main .right-content{
     width: 60%;
     padding-left: 60px;
     color: #5E454B;
 }
 
-.main .left-content h1{
+.main .right-content h1{
     font-size: 80px;
+    font-weight: 700;
 }
 
-.main .left-content p{
+.main .right-content p{
     font-size: 25px;
 }
 
 /*Scroll Indicator*/
 .scroll{
     text-align: center;
-    padding-top: 90px;
+    margin-top: 50px;
 }
 
 .scroll .text h1{
     font-size: 22px;
+    background-color: #5E454B;
+    color: #fff;
+    display: inline;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 700;
 }
 
 .indicator{
     padding-top: 10px;
 }
 
-.arrows path {
-    stroke: #5e454b;
-    fill: transparent;
-    stroke-width: 5px;  
-    animation: arrow 2s infinite;
-    transform: translate(43%,0);
-}
-
-@keyframes arrow{
-    0% {opacity:0}
-    40% {opacity:.5}
-    80% {opacity:0}
-    100% {opacity:0}
-}
-
-
-.arrows path.a1 {
-    animation-delay: -1s;
-}
-
-.arrows path.a2 {
-    animation-delay:-.5s;
-}
-
-.arrows path.a3 {   
-    animation-delay: -0s;
+.indicator i{
+    font-size: 40px;
+    margin-top: 15px;
 }
 
 /*Main Content Start Responsive*/
@@ -259,29 +265,29 @@ nav .navbar-nav a:hover{
         flex-wrap: wrap-reverse;
     }
 
-    .main .right-content{
+    .main .left-content{
         text-align: center;
         width: 100%;
         height: 100%; 
     }
 
-    .main .right-content img{
+    .main .left-content img{
         width: 90%;
         height: 400px;
     }
 
-    .main .left-content{
+    .main .right-content{
         width: 100%;
         padding: 20px;
         color: #5E454B;
         text-align: center;
     }
 
-    .main .left-content h1{
+    .main .right-content h1{
         font-size: 60px;
     }
 
-    .main .left-content p{
+    .main .right-content p{
         font-size: 20px;
     }
 
@@ -289,7 +295,7 @@ nav .navbar-nav a:hover{
 
 
 
-/*Main Content*/
+/* Main Content */
 .second-content{
     padding-top: 80px;
     background-color: #fff;
@@ -388,6 +394,7 @@ nav .navbar-nav a:hover{
 
 .tab-pane:nth-child(1) .image-text img{
     width: 50%;
+    height: 100%;
     transform: rotate(-30deg);
 }
 
@@ -738,11 +745,21 @@ nav .navbar-nav a:hover{
     color: #5E454B;
 }
 
+.worldwide .image img{
+    width: inherit;
+    height: inherit;
+}
+
 .indonesia {
     background-color: #F3F0D7;
     color: #5E454B;
 }
 
+/*.indonesia .image img{
+    width: 100%;
+    height: 100%;
+}
+*/
 section {
     background-color: #F3F0D7;
 }

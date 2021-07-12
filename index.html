@@ -8,7 +8,7 @@
     <title>Covid Tracker</title>
 
     <!-- Icon -->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- CSS -->
@@ -22,9 +22,9 @@
 </head>
 <body class="loading">
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-sm bg-transparant">
         <a class="navbar-brand" href="#">
-          <img src="img/favicon.png" alt="" width="50" height="50">
+          <img src="img/favicon.webp" alt="" width="50" height="50">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,7 +51,7 @@
                 <p>dan sumber yang terpercaya untuk menambah wawasan anda</p>
             </div>
             <div class="arrow">
-                <i class='bx bxs-down-arrow bx-fade-down' style='color:#b1afaa'  ></i>
+                <i class='bx bxs-down-arrow bx-fade-down' style='color:#b1afaa;'></i>
             </div>
         </div>
     </div>
@@ -61,6 +61,12 @@
     <!-- Start Main Content -->
     <div class="main" id="info">
         <div class="left-content">
+            <div class="image">
+                <img src="img/covid.webp">
+            </div>
+        </div>
+
+        <div class="right-content">
             <div class="text">
                 <h1>Covid-19</h1>
                 <p>Novel Coronavirus atau dikenal dengan Covid-19,salah satu dari jenis coronavirus yang mengakibatkan infeksi saluran pernapasan. Menjadi penyebab wabah di Wuhan,China pada Desember 2019 dan akhirnya menyebar ke seluruh negara di dunia. </p>
@@ -71,18 +77,8 @@
                     <h1>Scroll More</h1>
                 </div>
                 <div class="indicator">
-                    <svg class="arrows" preserveAspectRatio="xMaxYMax meet">
-                        <path class="a1" d="M0 0 L20 32 L40 0"></path>
-                        <path class="a2" d="M0 20 L20 52 L40 20"></path>
-                        <path class="a3" d="M0 40 L20 72 L40 40"></path>
-                    </svg>
+                    <i class='bx bxs-chevrons-down bx-burst' style='color:#5e454b' ></i>
                 </div>
-            </div>
-        </div>
-
-        <div class="right-content">
-            <div class="image">
-                <img src="img/covid.png">
             </div>
         </div>
     </div>
@@ -115,7 +111,7 @@
                   </ul>
 
                   <div class="image-text">
-                      <img src="img/bat.png">
+                      <img src="img/bat.webp">
                   </div>
               </div>
           </div>
@@ -127,15 +123,15 @@
                       <p>Gejala yang umum terjadi <i class='bx bx-error bx-flashing' style='color:#2bfc00'></i></p>
                       <div class="images">
                         <div class="image">
-                            <img src="img/fever.png">
+                            <img src="img/fever.webp">
                             <p>Demam</p>
                         </div>
                         <div class="image">
-                            <img src="img/fatigue.png">
+                            <img src="img/fatigue.webp">
                             <p>Merasa Kelelahan</p>
                         </div>  
                         <div class="image">
-                            <img src="img/cough.png">
+                            <img src="img/cough.webp">
                             <p>Batuk Kering</p>
                         </div>  
                       </div>
@@ -145,19 +141,19 @@
                       <p>Gejala yang tidak umum terjadi <i class='bx bx-error bx-flashing' style='color:#f1ec2f'  ></i></p>
                       <div class="images">
                         <div class="image">
-                            <img src="img/sore-throat.png">
+                            <img src="img/sore-throat.webp">
                             <p>Sakit Tenggorokan</p>
                         </div>
                         <div class="image">
-                            <img src="img/red-eyes.png">
+                            <img src="img/red-eyes.webp">
                             <p>Mata Merah</p>
                         </div>  
                         <div class="image">
-                            <img src="img/headache.png">
+                            <img src="img/headache.webp">
                             <p>Sakit Kepala</p>
                         </div>
                         <div class="image">
-                            <img src="img/smell.png">
+                            <img src="img/smell.webp">
                             <p>Kehilangan Indra Penciuman</p>
                         </div>  
                       </div>
@@ -166,15 +162,15 @@
                       <p>Gejala serius terjadi <i class='bx bx-error bx-flashing' style='color:#ff0000' ></i></p>    
                       <div class="images">
                         <div class="image">
-                            <img src="img/breath.png">
+                            <img src="img/breath.webp">
                             <p>Kesulitan Bernapas</p>
                         </div>
                         <div class="image">
-                            <img src="img/chest.png">
+                            <img src="img/chest.webp">
                             <p>Dada Terasa Tertekan</p>
                         </div>  
                         <div class="image">
-                            <img src="img/talk.png">
+                            <img src="img/talk.webp">
                             <p>Sulit Berbicara</p>
                         </div>  
                       </div>    
@@ -207,15 +203,15 @@
               </div>
                <div class="images">
                     <div class="image">
-                        <img src="img/pills.png">
+                        <img src="img/pills.webp">
                         <p>Konsumsi Obat Untuk Mengurangi Sakit Dari Gejala</p>
                     </div>
                     <div class="image">
-                        <img src="img/chest.png">
+                        <img src="img/chest.webp">
                         <p>Istirahat Yang Cukup</p>
                     </div>  
                     <div class="image">
-                        <img src="img/talk.png">
+                        <img src="img/talk.webp">
                         <p>Penuhi Asupan Cairan</p>
                     </div>
                 </div>
@@ -230,32 +226,32 @@
                 </div>
                 <div class="images">
                     <div class="image">
-                        <img src="img/wash.png">
+                        <img src="img/wash.webp">
                         <p>Mencuci tangan setelah menyentuh sesuatu</p>
                     </div>
                     <div class="image">
-                        <img src="img/chest.png">
+                        <img src="img/chest.webp">
                         <p>Jangan Menyentuh Mulut,Hidung,Atau Mata,Sebelum Mencuci Tangan</p>
                     </div>  
                     <div class="image">
-                        <img src="img/cough2.png">
+                        <img src="img/cough2.webp">
                         <p>Tutup Mulut Ketika Bersin Atau Batuk</p>
                     </div>
                     <div class="image">
-                        <img src="img/distance.png">
+                        <img src="img/distance.webp">
                         <p>Jaga Jarak Dengan Orang Lain</p>
                     </div>
                     <div class="image">
-                        <img src="img/home.png">
+                        <img src="img/home.webp">
                         <p>Diam Dirumah Jika Tidak Ada Keperluan</p>
                     </div>
                     <div class="image">
-                        <img src="img/hand.png">
+                        <img src="img/hand.webp">
                         <p>Hindari Berjabat Tangan</p>
                     </div>
                 </div>
                 <div class="bottom-text">
-                    <img src="img/medical-team.png">
+                    <img src="img/medical-team.webp">
                     <p>Patuhi segala protokol kesehatan,demi mengurangi angka penyebaran covid-19</p>
                 </div>
             </div>
@@ -362,7 +358,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 worldwide">
                 <h1 class="text-center my-4">World Covid Statistics</h1>
                 <div class="image text-center">
-                    <img src="img/worldwide.png" alt="Virus"> <br>
+                    <img src="img/worldwide.webp" alt="Virus"> <br>
                 </div>
                 <!-- <div class="container-fluid d-flex flex-wrap text-center justify-content-center my-4"> -->
                     <div class="world__status d-flex flex-wrap text-center my-4 justify-content-evenly row">
@@ -389,7 +385,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 indonesia">
                 <h1 class="text-center my-4">Indonesia Covid Statistics</h1>
                 <div class="image text-center">
-                    <img src="img/indonesia.png" alt="Virus">
+                    <img src="img/indonesia.webp" alt="Virus">
                 </div>
                 <!-- <div class="container-fluid d-flex flex-wrap text-center justify-content-center my-4"> -->
                     <div class="indo__status d-flex flex-wrap text-center my-4 justify-content-evenly row">
