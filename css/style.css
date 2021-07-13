@@ -590,8 +590,19 @@ nav .navbar-nav a:hover{
     }
 }
 
+/* SCROLL ANIMATION */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
 
-
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+/* SCROLL ANIMATION */
 
 /* Main Fourth Content*/
 .tab-pane:nth-child(4) .text{

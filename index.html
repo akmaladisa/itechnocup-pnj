@@ -60,13 +60,13 @@
 
     <!-- Start Main Content -->
     <div class="main" id="info">
-        <div class="left-content">
+        <div class="left-content reveal">
             <div class="image">
                 <img src="img/covid.webp">
             </div>
         </div>
 
-        <div class="right-content">
+        <div class="right-content reveal">
             <div class="text">
                 <h1>Covid-19</h1>
                 <p>Novel Coronavirus atau dikenal dengan Covid-19,salah satu dari jenis coronavirus yang mengakibatkan infeksi saluran pernapasan. Menjadi penyebab wabah di Wuhan,China pada Desember 2019 dan akhirnya menyebar ke seluruh negara di dunia. </p>
@@ -84,7 +84,7 @@
     </div>
 
     <!-- Main Second Content -->
-    <div class="second-content">
+    <div class="second-content reveal">
 
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <button class="nav-link active" id="nav-sebab-tab" data-bs-toggle="tab" data-bs-target="#nav-sebab" type="button" role="tab" aria-controls="nav-sebab" aria-selected="true">Penyebab</button>
@@ -259,7 +259,7 @@
 
 
     <!-- F.A.Q Content -->
-    <div class="faq-content" id="faq">
+    <div class="faq-content reveal" id="faq">
         <p>Pertanyaan Seputar Covid-19</p>
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
@@ -351,17 +351,17 @@
     <!-- Statistik -->
     <div class="container-fluid" id="statistics">
         <div class="row px-3 py-3">
-            <div class="col-12 py-2" id="mapid">
+            <div class="col-12 py-2 reveal" id="mapid">
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 worldwide">
                 <h1 class="text-center my-4">World Covid Statistics</h1>
-                <div class="image text-center">
+                <div class="image text-center reveal">
                     <img src="img/worldwide.webp" alt="Virus"> <br>
                 </div>
                 <!-- <div class="container-fluid d-flex flex-wrap text-center justify-content-center my-4"> -->
-                    <div class="world__status d-flex flex-wrap text-center my-4 justify-content-evenly row">
+                    <div class="world__status d-flex flex-wrap text-center my-4 justify-content-evenly row reveal">
                         <div class="status__item">
                             <h2>0</h2>
                             <p class="confirmed">Confirmed</p>
@@ -375,7 +375,7 @@
                             <p class="recovered">Recovered</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row reveal">
                         <div class="col-12 chart-container-total-world pb-3">
                             <canvas id="worldwideChart"></canvas>
                         </div>
@@ -384,11 +384,11 @@
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 indonesia">
                 <h1 class="text-center my-4">Indonesia Covid Statistics</h1>
-                <div class="image text-center">
+                <div class="image text-center reveal">
                     <img src="img/indonesia.webp" alt="Virus">
                 </div>
                 <!-- <div class="container-fluid d-flex flex-wrap text-center justify-content-center my-4"> -->
-                    <div class="indo__status d-flex flex-wrap text-center my-4 justify-content-evenly row">
+                    <div class="indo__status d-flex flex-wrap text-center my-4 justify-content-evenly row reveal">
                         <div class="status__item">
                             <h2>0</h2>
                             <p class="confirmed">Confirmed</p>
@@ -402,7 +402,7 @@
                             <p class="recovered">Recovered</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row reveal">
                         <div class="col-12 chart-container-total-world pb-3">
                             <canvas id="indoChart"></canvas>
                         </div>
@@ -411,7 +411,7 @@
             </div>
         </div>
         <section class="search">
-            <div class="row py-4">
+            <div class="row py-4 reveal">
                 <div class="search__wrapper col-12 text-center">
                     <form id="covidSearch">
                         <i class="fw-bolder text-center fs-6 font-monospace">API by <a target="_blank" class="link-dark" href="https://corona.lmao.ninja/v2/countries/">disease.sh</a></i>
@@ -426,13 +426,13 @@
             </div>
             <div class="row">
                 <div class="search__wrapper col-12">
-                    <div class="search__result text-center" id="countryResultSearch">
+                    <div class="search__result text-center reveal" id="countryResultSearch">
                         <!-- CASE PER COUNTRY WILL BE HERE -->
                         
                     </div>
                 </div>
             </div>
-            <aside class="container-fluid case-provinsi">
+            <aside class="container-fluid case-provinsi reveal">
                 <div class="row pt-4">
                     <div class="search__wrapper col-12 text-center">
                             <!-- <form id="covidProvinsi"> -->
@@ -483,5 +483,6 @@
        });
 
     </script>
+    <script src="js/animatescroll.js"></script>
 </body>
 </html>
