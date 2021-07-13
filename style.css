@@ -755,11 +755,11 @@ nav .navbar-nav a:hover{
     color: #5E454B;
 }
 
-/*.indonesia .image img{
-    width: 100%;
-    height: 100%;
+.indonesia .image img{
+    width: inherit;
+    height: inherit;
 }
-*/
+
 section {
     background-color: #F3F0D7;
 }
@@ -775,18 +775,8 @@ section aside.case-provinsi {
 
 /* MAP COVID */
 #mapid {
-    height: 35vw;
-    /* TOGGLE MAP */
-    background-color: #F3F0D7;
-}
-
-/* POP UP MAP */
-.popUp {
-    width: auto;
-}
-
-.row {
-    background-color: #F3F0D7;
+    height: 500px;
+    overflow-y: scroll;
 }
 
 /* loader */
@@ -924,9 +914,7 @@ input#searchProvinsi:focus {
         /* SEJAJARIN INPUT DAN SUGESTION */
     }
 
-    #mapid {
-        height: 100vw;
-    }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -939,10 +927,6 @@ input#searchProvinsi:focus {
         margin: auto;
         cursor: pointer;
         /* SEJAJARIN INPUT DAN SUGESTION */
-    }
-
-    #mapid {
-        height: 90vw;
     }
 
 }
