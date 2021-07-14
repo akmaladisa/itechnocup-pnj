@@ -182,7 +182,7 @@ nav .navbar-nav a:hover{
 }
 
 
-/* Main Content Start */
+/* Main Content */
 
 .main{
     width: 100%;
@@ -201,9 +201,7 @@ nav .navbar-nav a:hover{
 
 .main .left-content .image{
     margin: 0 auto;
-    width: 80%;
-    background: rgb(115,114,113);
-    background: linear-gradient(180deg, rgba(115,114,113,0) 0%, rgba(73,64,58,0.6558823358444941) 76%, rgba(59,48,40,1) 100%);   
+    width: 80%;   
 }
 
 .main .left-content img{
@@ -258,7 +256,7 @@ nav .navbar-nav a:hover{
     margin-top: 15px;
 }
 
-/*Main Content Start Responsive*/
+/*Main Content Responsive*/
 @media screen and (min-width:300px) and (max-width: 800px){
 
     .main{
@@ -271,9 +269,13 @@ nav .navbar-nav a:hover{
         height: 100%; 
     }
 
-    .main .left-content img{
+    .main .left-content .image{
         width: 90%;
-        height: 400px;
+    }
+
+    .main .left-content img{
+        width: 100%;
+        height: 300px;
     }
 
     .main .right-content{
@@ -295,7 +297,7 @@ nav .navbar-nav a:hover{
 
 
 
-/* Main Content */
+/* Second Main Content */
 .second-content{
     padding-top: 80px;
     background-color: #fff;
@@ -340,7 +342,7 @@ nav .navbar-nav a:hover{
 }
 
 
-/* Responsive Main Content */
+/* Responsive Second Main Content */
 @media screen and (min-width:300px) and (max-width: 800px){
     .second-content .nav-tabs{
         width: 100%;
@@ -359,7 +361,7 @@ nav .navbar-nav a:hover{
 
 
 
-/* Main First Content */
+/* Second Main Content | First Content */
 .tab-pane:nth-child(1) p{
     font-size: 24px;
     color: #5e454b;
@@ -399,7 +401,7 @@ nav .navbar-nav a:hover{
 }
 
 
-/* Responsive Main First Content*/
+/* Responsive Second Main Content | First Content*/
 @media screen and (min-width:300px) and (max-width: 800px){
     .tab-pane:nth-child(1) p{
         font-size: 16px;
@@ -431,7 +433,7 @@ nav .navbar-nav a:hover{
 
 
 
-/* Main Second Content */
+/* Second Main Content | Second Content */
 .tab-pane:nth-child(2) p{
     font-size: 30px;
     color: #5e454b;
@@ -485,7 +487,7 @@ nav .navbar-nav a:hover{
     font-size: 24px;
 }
 
-/*Responsive Main Second Content*/
+/*Responsive Second Main Content | Second Content*/
 @media screen and (min-width:300px) and (max-width: 800px){
 
     .tab-pane:nth-child(2) p{
@@ -527,7 +529,7 @@ nav .navbar-nav a:hover{
 }
 
 
-/* Main Third Content */
+/* Main Second Main Content | Content */
 .tab-pane:nth-child(3) .text{
     padding-top: 20px;
 }
@@ -567,7 +569,7 @@ nav .navbar-nav a:hover{
     padding: 10px;
 }
 
-/* Responsive Main Third Content */
+/* Responsive Second Main Content | Third Content */
 @media screen and (min-width:300px) and (max-width: 800px){
     .tab-pane:nth-child(3) .text{
         padding-top: 10px;
@@ -599,7 +601,7 @@ nav .navbar-nav a:hover{
 
 /* SCROLL ANIMATION */
 
-/* Main Fourth Content*/
+/* Second Main Content | Fourth Content*/
 .tab-pane:nth-child(4) .text{
     padding-top: 20px;
 }
@@ -649,7 +651,7 @@ nav .navbar-nav a:hover{
 }
 
 
-/* Responsive Main Fourth Content */
+/* Responsive Second Main Content | Fourth Content */
 @media screen and (min-width:300px) and (max-width: 800px){
     .tab-pane:nth-child(4) .text{
         padding: 10px 10px 0;
