@@ -416,8 +416,13 @@ nav .navbar-nav a:hover{
         color: #5e454b;
     }
 
+    .tab-pane:nth-child(1) .image-text{
+        width: 20%;
+    }
+
     .tab-pane:nth-child(1) .image-text img{
-        width: 70%;
+        width: 100px;
+        height: 100px;
         transform: rotate(-30deg);
     }
 }
