@@ -224,12 +224,12 @@ nav .navbar-nav a:hover{
     color: #5E454B;
 }
 
-.main .right-content h1{
+.main .right-content .text h1{
     font-size: 80px;
     font-weight: 700;
 }
 
-.main .right-content p{
+.main .right-content .text p{
     font-size: 25px;
 }
 
@@ -239,7 +239,7 @@ nav .navbar-nav a:hover{
     margin-top: 50px;
 }
 
-.scroll .text h1{
+.scroll .head h1{
     font-size: 22px;
     background-color: #5E454B;
     color: #fff;
@@ -283,11 +283,11 @@ nav .navbar-nav a:hover{
         text-align: center;
     }
 
-    .main .right-content h1{
+    .main .right-content .text h1{
         font-size: 60px;
     }
 
-    .main .right-content p{
+    .main .right-content .text p{
         font-size: 20px;
     }
 
