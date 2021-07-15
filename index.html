@@ -21,6 +21,12 @@
     crossorigin=""/>
 </head>
 <body class="loading">
+    
+    <!-- LOADER -->
+    <div class="loader">
+      <i class="bx bxs-virus bx-spin"></i>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-sm bg-transparant">
         <a class="navbar-brand" href="#">
@@ -37,7 +43,6 @@
             <a class="nav-link " href="#statistics" tabindex="-1" aria-disabled="true">Statistik</a>
           </div>
         </div>
-      </div>
     </nav>
 
     <!-- First Content Page Appeare -->
@@ -452,10 +457,6 @@
         <p>&copy; 2021 <a href="https://nevtik.org/">Nevtik.org</a></p>
     </div>
 
-    <div class="loader">
-        <i class="bx bxs-virus bx-spin"></i>
-    </div>
-
 
     <!-- Javascript -->
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script> -->
@@ -481,7 +482,7 @@
      $(window).scroll(function(){
        $('ul').toggleClass('nav-scroll', $(this).scrollTop() > 10);
        });
-
     </script>
+    <script src="js/animatescroll.js"></script>
 </body>
 </html>
