@@ -33,6 +33,7 @@ nav .navbar-nav a{
 nav .navbar-nav a:hover{
     background-color: #fff;
     color: #5e454b;
+    font-weight: 600;
 }
 
 .bg-transparant {
@@ -51,7 +52,8 @@ nav .navbar-nav a:hover{
 
 .bg-transparant.nav-scroll .navbar-nav a:hover{
     background-color: #5e454b;
-    color: #d8b384;
+    color: #fff;
+    font-weight: 600;
 }
 
 
@@ -84,7 +86,7 @@ nav .navbar-nav a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: grayscale(50%) drop-shadow(8px 8px 10px gray);
+    filter: grayscale(50%);
 
 }
 
@@ -325,9 +327,9 @@ nav .navbar-nav a:hover{
 
 .nav-tabs .nav-link.active {
     background-color: #5e454b !important;
-    color: #d8b384 !important;
+    color: #fff !important;
     outline: none;
-
+    font-weight: 600;
 }
 
 .nav-tabs button{
@@ -733,7 +735,7 @@ nav .navbar-nav a:hover{
 }
 
 .accordion-button:after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d8b384'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%235e454b'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
 .accordion-body{
