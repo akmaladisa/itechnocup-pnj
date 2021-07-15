@@ -260,7 +260,7 @@ nav .navbar-nav a:hover{
 @media screen and (min-width:300px) and (max-width: 800px){
 
     .main{
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
     }
 
     .main .left-content{
@@ -419,12 +419,12 @@ nav .navbar-nav a:hover{
     }
 
     .tab-pane:nth-child(1) .image-text{
-        width: 20%;
+        width: 30%;
     }
 
     .tab-pane:nth-child(1) .image-text img{
-        width: 100px;
-        height: 100px;
+        width: 65px;
+        height: 65px;
         transform: rotate(-30deg);
     }
 }
@@ -759,7 +759,6 @@ nav .navbar-nav a:hover{
     padding-top: 100px;
 }
 .worldwide {
-    background-color: #F3F0D7;
     color: #5E454B;
 }
 
@@ -769,7 +768,6 @@ nav .navbar-nav a:hover{
 }
 
 .indonesia {
-    background-color: #F3F0D7;
     color: #5E454B;
 }
 
@@ -778,13 +776,6 @@ nav .navbar-nav a:hover{
     height: 100%;
 }
 */
-section {
-    background-color: #F3F0D7;
-}
-
-section aside.case-provinsi {
-    background-color: #F3F0D7;
-}
 
 .case_result_provinsi {
     overflow-y: scroll;
@@ -795,16 +786,11 @@ section aside.case-provinsi {
 #mapid {
     height: 35vw;
     /* TOGGLE MAP */
-    background-color: #F3F0D7;
 }
 
 /* POP UP MAP */
 .popUp {
     width: auto;
-}
-
-.row {
-    background-color: #F3F0D7;
 }
 
 /* loader */
