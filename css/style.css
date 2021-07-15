@@ -912,6 +912,12 @@ input#searchProvinsi:focus {
     height: 200px;
 }
 
+@media screen and (min-width:300px) and (max-width: 575px){
+    input#searchProvinsi{
+        width: 90%;
+    }
+}
+
 @media screen and (max-width:576px) {
     #cardCountry {
         width: 100%;
