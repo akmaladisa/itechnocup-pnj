@@ -1,10 +1,27 @@
-*Note
-Pastikan membuka web dalam keadaan online untuk mendapatkan data dari Web API
+### Note
 
-*Dibuat dengan
--Bootstrap 5
--Boxicons 2.0.7
+*Pastikan file dibuka dalam keadaan online
 
-*API
--https://disease.sh/
--https://bnpb-inacovid19.hub.arcgis.com/
+## Dibuat dengan 
+
+- Bootstrap 5
+- Boxicons 2.0.7
+
+## Source Aset
+
+ **Gambar dan Icon**
+- flaticon.com
+- unsplash.com
+- boxicons.com
+
+**Font**	 
+- fonts.google.com
+
+**Framework**
+- getbootstrap.com
+
+**API**
+- disease.sh
+- bnpb-inacovid19.hub.arcgis.com
+
+
