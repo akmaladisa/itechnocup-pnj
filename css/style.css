@@ -781,13 +781,12 @@ nav .navbar-nav a:hover{
 
 .case_result_provinsi {
     overflow-y: scroll;
-    height: 440px;
+    height: 550px;
 }
 
 /* MAP COVID */
-#mapid {
+#mapid, #mapprovinsi {
     height: 35vw;
-    /* TOGGLE MAP */
 }
 
 /* POP UP MAP */
@@ -936,7 +935,7 @@ input#searchProvinsi:focus {
         /* SEJAJARIN INPUT DAN SUGESTION */
     }
 
-    #mapid {
+    #mapid, #mapprovinsi {
         height: 100vw;
     }
 }
@@ -953,7 +952,7 @@ input#searchProvinsi:focus {
         /* SEJAJARIN INPUT DAN SUGESTION */
     }
 
-    #mapid {
+    #mapid, #mapprovinsi {
         height: 90vw;
     }
 
