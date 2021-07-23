@@ -27,6 +27,36 @@
       <i class="bx bxs-virus bx-spin"></i>
     </div>
 
+    <!-- Modal List RS -->
+    <div class="modal fade" id="RSModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Daftar Rumah Sakit</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center" id="hospitalContainer">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal RS DETAIL -->
+    <div class="modal fade" id="RSDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Detail Rumah Sakit</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="hospitalDetail">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-sm bg-transparant">
         <a class="navbar-brand" href="#">
@@ -41,6 +71,7 @@
             <a class="nav-link" href="#info">Informasi</a>
             <a class="nav-link" href="#faq">F.A.Q</a>
             <a class="nav-link " href="#statistics" tabindex="-1" aria-disabled="true">Statistik</a>
+            <a class="nav-link " href="#faskes" tabindex="-1" aria-disabled="true">RS</a>
           </div>
         </div>
     </nav>
@@ -415,7 +446,7 @@
                 <!-- </div> -->
             </div>
         </div>
-        <section class="search">
+        <section class="search mb-5">
             <div class="row py-4 reveal">
                 <div class="search__wrapper col-12 text-center">
                     <form id="covidSearch">
@@ -455,6 +486,26 @@
                 </div>  
             </aside>
         </section>
+
+        <h3 class="text-center" style="color: #5e454b;">Ketersediaan Tempat Tidur Rumah Sakit</h3>
+        <div class="container reveal" id="faskes">
+            <h5>Pilih Provinsi</h5>
+            <select class="form-select mb-5" aria-label="Default select example" id="selectProvinsi">
+            </select>
+
+            <h5>Pilih Kabupaten / Kota</h5>
+            <select required class="form-select mb-5" aria-label="Default select example" id="selectCity" disabled>
+            </select>
+
+            <h5>Pilih Tempat Tidur</h5>
+            <select class="form-select" aria-label="Default select example" id="bedType" placeholder="Kabupaten/Kota">
+                <option value="1">Covid 19</option>
+                <option value="2">Non-Covid 19</option>
+            </select>
+
+            <button data-bs-toggle="modal" data-bs-target="#RSModal" disabled onclick="searchHospital()" class="btn p-2 btn-block font-monospace fw-bold text-white text-center btn-primary mt-3" id="btnHospital"><i class="bx bx-search-alt fw-bold fs-2"></i></button> <br>
+            <span style="font-size: 14px;" class="mt-3 d-block text-muted">API <a href="https://github.com/satyawikananda/rs-bed-covid-indo-api" target="_blank" style="text-decoration: none;">Source</a></span>
+          </div>
     </div>
 
     <div class="copyright">
@@ -479,6 +530,8 @@
     <script src="js/chartjs/indoChart.js"></script>
     <script src="js/covidmap.js"></script>
     <script src="js/mapprovinsi.js"></script>
+    <script src="js/bedcovid.js"></script>
+    <script src="js/resetselect.js"></script>
     <script type="text/javascript">
      $(window).scroll(function(){
        $('nav').toggleClass('nav-scroll', $(this).scrollTop() > 10);

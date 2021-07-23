@@ -15,8 +15,6 @@ function updateMapWorld()
         .then( resposnse => resposnse.json() )
         .then( data => {
     
-            console.log(data);
-    
             data.forEach( element => {
     
                 let latitude = element.countryInfo.lat;

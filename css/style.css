@@ -56,7 +56,14 @@ nav .navbar-nav a:hover{
     font-weight: 600;
 }
 
+/* BG CHOCOLATE */
+.bg-chocolate {
+    background-color: #5e454b;
+}
 
+.text-chocolate {
+    color: #5e454b;
+}
 
 /* Responsive Navbar*/
 @media screen and (min-width:300px) and (max-width: 1000px){
@@ -979,17 +986,30 @@ input#searchProvinsi:focus {
 }
 
 
+/* SEARCH BTN HOSPITAL */
+#btnHospital {
+    background-color: #5e454b;
+    border: none;
+    border-radius: 15px;
+}
 
+#faskes {
+    color: #5e454b;
+}
+
+option {
+    color: #5e454b;
+}
 
 
 /*Copyright*/
 .copyright{
-  width: 100%;
-  background-color: #5e454b;
-  color: #d8b384;
-  text-align: center;
-  margin-bottom: -16px;
-  margin-top: 50px;
+    width: 100%;
+    background-color: #5e454b;
+    color: #d8b384;
+    text-align: center;
+    margin-bottom: -16px;
+    margin-top: 50px;
 }
 
 .copyright p{
