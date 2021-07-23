@@ -26,4 +26,6 @@
 **API**
 
 - disease.sh
-- https://github.com/Reynadi531/api-covid19-indonesia-v2 -https://github.com/satyawikananda/rs-bed-covid-indo-api -https://github.com/satyawikananda/rs-bed-covid-indo-api
+- https://github.com/Reynadi531/api-covid19-indonesia-v2
+- https://github.com/satyawikananda/rs-bed-covid-indo-api
+
