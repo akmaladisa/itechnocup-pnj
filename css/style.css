@@ -733,7 +733,7 @@ nav .navbar-nav a:hover{
 
 .accordion-button:not(.collapsed){
     background-color: #5e454b !important;
-    color: #d8b384 !important;
+    color: #fff !important;
 }
 
 .accordion-button:focus{
@@ -833,7 +833,7 @@ form input {
     cursor: text;
     transition: .4s;
     background-color: #5E454B;
-    color: #D8B384;
+    color: #fff;
 }
 
 form{
@@ -848,7 +848,7 @@ form button {
     box-shadow: 1.5px 2px 2.5px rgba(0, 0, 0, 0.705);
     transition: .4s;
     cursor: pointer;
-    color: #D8B384 !important;
+    color: #fff !important;
 }
 
 form input:hover, form button:hover {
@@ -890,7 +890,7 @@ input#searchProvinsi {
     cursor: text;
     transition: .4s;
     background-color: #5E454B;
-    color: #D8B384;
+    color: #fff;
 }
 
 input#searchProvinsi:hover {
@@ -1006,7 +1006,7 @@ option {
 .copyright{
     width: 100%;
     background-color: #5e454b;
-    color: #d8b384;
+    color: #fff;
     text-align: center;
     margin-bottom: -16px;
     margin-top: 50px;
@@ -1018,7 +1018,7 @@ option {
 }
 
 .copyright a{
-    color: #d8b384;
+    color: #fff;
 }
 
 .copyright a{
