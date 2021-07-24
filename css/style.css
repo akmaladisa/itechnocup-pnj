@@ -66,7 +66,7 @@ nav .navbar-nav a:hover{
 }
 
 /* Responsive Navbar*/
-@media screen and (min-width:300px) and (max-width: 1000px){
+@media screen and (min-width:300px) and (max-width: 575px){
     nav.navbar .navbar-brand{
         padding: 5px 0 5px 20px;
     }
@@ -77,6 +77,30 @@ nav .navbar-nav a:hover{
     }
 }
 
+@media screen and (min-width:576px) and (max-width: 700px){
+    nav.navbar .navbar-brand{
+        padding: 0px 0 0px 10px;
+    }
+
+    nav .navbar-nav a{
+        text-align: center;
+        width: 100px;
+        font-size: 12px;
+        margin: 0 0;
+    }
+}
+
+@media screen and (min-width:701px) and (max-width: 900px){
+    nav.navbar .navbar-brand{
+        padding: 0px 0 0px 20px;
+    }
+
+    nav .navbar-nav a{
+        width: 120px;
+        font-size: 16px;
+        margin: 0 0;
+    }
+}
     
 /*Jumbotron*/
 .first-content{
